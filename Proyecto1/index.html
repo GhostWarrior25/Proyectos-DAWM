@@ -1,45 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Alejandro Donoso</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/Stylesheet.css">
 </head>
+
 <body>
     <nav>
-        <button class="mainButton">Inicio</button>
-        <button class="mainButton">Sobre Mi</button>
-        <button class="mainButton">Portafolio</button>
-        <button class="mainButton">Certificados</button>
-        <button class="secButton">Contacto</button>
+        <div class="nav-wrapper">
+            <button class="mainButton">Inicio</button>
+            <button class="mainButton">Sobre Mi</button>
+            <button class="mainButton">Portafolio</button>
+            <button class="mainButton">Certificados</button>
+            <button class="secButton">Contacto</button>
+        </div>
     </nav>
-    <h1>Inicio</h1>
-    <p><span>Hola, Mi nombre es Alejandro</span>
-    <span>Estudiante de Computacion</span></p>
-    <h2>Proyecto mas reciente</h2>
-    <img src="">
-    <h2>Areas de Conocimientos</h2>
-    <table>
-        <tr>
-            <td><img src=""></td>
-            <td><img src=""></td>
-            <td><img src=""></td>
-            <td><img src=""></td>
-        </tr>
-        <tr>
-            <td>Ciberseguridad</td>
-            <td>Programacion</td>
-            <td>Historia</td>
-            <td>Psicologia</td>
-        </tr>
-    </table>
-    <h2>Musica Para Programar</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KOADaMYdvCI?controls=1"  allowfullscreen></iframe>
 
-    <h2>Evento Mas Reciente</h2>
-    <h3>Concierto United Forces Helloween - Hammerfall</h3>
-    <img src="https://i.imgur.com/tsKXjSj.jpg" width="350"  height="200">
-    <h4>Locacion</h4>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.790653469129!2d-78.49220558572992!3d-0.2133739354557056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a1a52d9f309%3A0xe58b3f1e72d76d60!2sColiseo%20General%20Rumi%C3%B1ahui!5e0!3m2!1sen!2sec!4v1665589367672!5m2!1sen!2sec" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+    <div class="profile" id="mainProfile">
+        <p class="caracteristica" id="ch1">Apasionado de la Historia y la Tecnología</p>
+        <p class="caracteristica" id="ch1">Politecnico</p>
+        <p class="caracteristica" id="ch1">Desarrollador</p>
+        <p class="caracteristica" id="ch1">Ciber seguridad</p>
+        <img class="profilePic" src="">
+
+    </div>
+
+    <div class="sectionProfile" id="Inicio">
+        <h1>Inicio</h1>
+        <div class="presentation-wrapper"><b>
+                <p><span class="presentation1">HOLA,</p>
+                <p><span class="presentation2">MI NOMBRE ES</span> <span class="presentation3">ALEJANDRO DONOSO</span>
+                </p>
+                <span class="presentation2">ESTUDIANTE DE </span> <span class="presentation3">CIENCIAS DE LA
+                    COMPUTACION</span></p>
+            </b></div>
+
+
+        <h2>Proyecto mas reciente</h2>
+        <div class="project-wrapper">
+            <img src="/images/image 2.png" width="75%">
+            <p class="description">
+                <b>Juego de Preguntas para atraer publico al stand del Programa Mentores y Novatos
+                    en la Induccion de Novatos 2022 I</b>
+            <p>
+        </div>
+        <h2>Areas de Conocimientos</h2>
+        <table id="knowledge-wrapper">
+            <tr>
+                <td>
+                    <div class="card-wrapper" id="prog">
+                        <img class="imgknow" src="/images/image 3.png">
+                        <p class="descknow">Programacion
+                        <p>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-wrapper">
+                        <img class="imgknow" src="/images/image 4.png">
+                        <p class="descknow">Ciberseguridad</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-wrapper">
+                        <img class="imgknow" src="/images/image 6.png">
+                        <p class="descknow">Historia General</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-wrapper">
+                        <img class="imgknow" src="/images/image 5.png">
+                        <p class="descknow">Sismologia</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-wrapper">
+                        <img class="imgknow" src="/images/image 7.png">
+                        <p class="descknow">Primeros Auxilios Psicologicos</p>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <h2>Musica Para Programar</h2>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vnkizPvOIXQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <h2>Proximo Evento</h2>
+        <div class="event-wrapper">
+            <p class="name" id="event-name">Ecuador Metal Fest 2023</p>
+            <img class="event-img" src="/images/metalfest.jpg">
+            <p class="event-description"></p>
+            <div class="event-location">
+                <p class="name" id="location">Locacion</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.790653469129!2d-78.49220558572992!3d-0.2133739354557056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a1a52d9f309%3A0xe58b3f1e72d76d60!2sColiseo%20General%20Rumi%C3%B1ahui!5e0!3m2!1sen!2sec!4v1665589367672!5m2!1sen!2sec"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sectionProfile" id="About me">
+
+    </div>
+    <div class="sectionProfile" id="Portfolio">
+        
+    </div>
+    <div class="sectionProfile" id="Badges">
+        
+    </div>
+    <div class="sectionProfile" id="Contact">
+        
+    </div>
+
 
 </body>
+
 </html>
