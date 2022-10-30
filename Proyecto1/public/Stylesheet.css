@@ -388,3 +388,40 @@ nav {
 .Contact-Item{
     width: 45%;
 }
+#network-ref{
+    text-align: center;
+    width: 100%;
+    color: black;
+    text-size-adjust: 2rem;
+    padding: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.form-title{
+    color: var(--color-4);
+    text-size-adjust: 2rem;
+    font-weight: bolder;
+}
+
+@media only screen and (max-device-width: 480px) {
+    
+    .project-image{
+        width: 90Vw;
+        height: 50%;
+    }
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+    .Contact-Item{
+        width: 100%;
+    }
+    .Badge-img{
+        width: 90Vw;
+        height: 50%;
+    }
+}
