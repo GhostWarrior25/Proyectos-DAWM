@@ -4,18 +4,18 @@
 <head>
     <title>Alejandro Donoso</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/public/Stylesheet.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-wrapper">
-            <button class="mainButton">Inicio</button>
-            <button class="mainButton">Sobre Mi</button>
-            <button class="mainButton">Portafolio</button>
-            <button class="mainButton">Certificados</button>
-            <button class="secButton">Contacto</button>
+            <button type="button" class="mainButton" onclick="location.href='#Inicio'">Inicio</button>
+            <button type="button" class="mainButton" onclick="location.href='#About me'">Sobre Mi</button>
+            <button type="button" class="mainButton" onclick="location.href='#Portfolio'">Portafolio</button>
+            <button type="button" class="mainButton" onclick="location.href='#Badges'">Certificados</button>
+            <button type="button" class="secButton" onclick="location.href='#Contact'">Contacto</a></button>
         </div>
     </nav>
 
@@ -48,46 +48,38 @@
             <p>
         </div>
         <h2>Areas de Conocimientos</h2>
-        <table id="knowledge-wrapper">
-            <tr>
-                <td>
-                    <div class="card-wrapper" id="prog">
-                        <img class="imgknow" src="/images/image 3.png">
-                        <p class="descknow">Programacion
-                        <p>
-                    </div>
-                </td>
-                <td>
-                    <div class="card-wrapper">
-                        <img class="imgknow" src="/images/image 4.png">
-                        <p class="descknow">Ciberseguridad</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="card-wrapper">
-                        <img class="imgknow" src="/images/image 6.png">
-                        <p class="descknow">Historia General</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="card-wrapper">
-                        <img class="imgknow" src="/images/image 5.png">
-                        <p class="descknow">Sismologia</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="card-wrapper">
-                        <img class="imgknow" src="/images/image 7.png">
-                        <p class="descknow">Primeros Auxilios Psicologicos</p>
-                    </div>
-                </td>
-            </tr>
+        <div id="knowledge-wrapper">
 
-        </table>
+            <div class="card-wrapper" id="prog">
+                <img class="imgknow" src="/images/image 3.png">
+                <p class="descknow">Programacion
+                <p>
+            </div>
+
+            <div class="card-wrapper">
+                <img class="imgknow" src="/images/image 4.png">
+                <p class="descknow">Ciberseguridad</p>
+            </div>
+
+            <div class="card-wrapper">
+                <img class="imgknow" src="/images/image 6.png">
+                <p class="descknow">Historia General</p>
+            </div>
+
+            <div class="card-wrapper">
+                <img class="imgknow" src="/images/image 5.png">
+                <p class="descknow">Sismologia</p>
+            </div>
+
+            <div class="card-wrapper">
+                <img class="imgknow" src="/images/image 7.png">
+                <p class="descknow">Primeros Auxilios Psicologicos</p>
+            </div>
+        </div>
         <h2>Musica Para Programar</h2>
         <div class="video-wrapper">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vnkizPvOIXQ"
-                title="YouTube video player" frameborder="0"
+            <iframe class="video-player" src="https://www.youtube.com/embed/vnkizPvOIXQ" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -108,18 +100,282 @@
     </div>
 
     <div class="sectionProfile" id="About me">
+        <h1>Sobre Mi</h1>
+        <div class="about-menu">
+            <h2>Navegacion</h2>
+            <ul class="list-option">
+                <p><b>Navegacion</b></p>
+                <li><a class="list-item" href="#Personal-Data">Datos Personales</a></li>
+                <li><a class="list-item" href="#Study">Estudios</a></li>
+                <li><a class="list-item" href="#knowledge-tittle">Conocimientos</a></li>
+                <li><a class="list-item" href="#QS">Quien Soy</a></li>
+                <li><a class="list-item" href="#Fort">Fortalezas</a></li>
+                <li><a class="list-item" href="#Mot">Motivaciones</a></li>
 
-    </div>
-    <div class="sectionProfile" id="Portfolio">
-        
-    </div>
-    <div class="sectionProfile" id="Badges">
-        
-    </div>
-    <div class="sectionProfile" id="Contact">
-        
-    </div>
+            </ul>
+        </div>
+        <div class="about-wrapper">
+            <h2 id="Personal-Data">Datos Personales</h2>
+            <div class="about-description">
+                <div class="about-item">
+                    <p class="title-info"><b>Nombre:</b></p>
+                    <p class="description-info">Luis Alejandro Donoso Bravo </p>
+                </div>
+                <div class="about-item">
+                    <p class="title-info"><b>Edad:</b></p>
+                    <p class="description-info">21 años</p>
+                </div>
+                <div class="about-item">
+                    <p class="title-info"><b>Fecha de Nacimiento:</b></p>
+                    <p class="description-info">25 de Enero de 2001</p>
+                </div>
+                <div class="about-item">
+                    <p class="title-info"><b>Idioma Nativo:</b></p>
+                    <p class="description-info">Español</p>
+                </div>
+                <div class="about-item">
+                    <p class="title-info"><b>Idiomas</b></p>
+                    <ul>
+                        <li class="description-info">Ingles C1</li>
+                        <li class="description-info">Aleman A1</li>
+                        <li class="description-info">Mandarin HSK1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="important-info">
+                <h2 id="Study">Estudios</h2>
+                <div class="study-content">
+                    <p class="title-info"><b>Colegio</b></p>
+                    <p class="description-info">Unidad Educativa Dante ALighieri <br>Titulo de Bachiller en Ciencias
+                        <br>Promocion 2019
+                    </p>
+                    <p class="title-info"><b>Pregrado</b></p>
+                    <p class="description-info">Escuela Superior Politecnica del Litoral (ESPOL)<br>Carrera de
+                        Ingenieria en
+                        Ciencias de la Computacion <br>En Curso</p>
+                </div>
+                <h2 id="Knowledge-tittle">Conocimientos</h2>
+                <div class="knowledge-content">
+                    <p class="description-info">Programacion en Python, Java, C,C++<br>
+                        Redes de Datos<br>
+                        Manejo de Bases de Datos<br>
+                        Seguridad Informatica (Infraestructura Critica e Ingenieria Social)<br>
+                        Ethical Hacking<br>
+                        Sismologia<br>
+                        Vulcanologia<br>
+                        Primeros Auxilios Psicologicos
+                    </p>
+                </div>
+                <h2 id="QS">Quien Soy</h2>
+                <div class="Who-content">
+                    <p class="description-info">
+                        Guayaquileno de Nacimiento con 21 años de edad, estudiante de Ingenieria en Ciencias de la
+                        Computacion en la Escuela Superior Politecnica del Litoral (ESPOL).<br>
+                    </p>
+                </div>
+                <h2 id="CMC">Como Me Considero</h2>
+                <div class="Considerated-content">
+                    <p class="description-info">
+                        Me considero una persona con una gran capacidad de adaptacion, con una gran capacidad de trabajo
+                        en
+                        equipo, con una gran capacidad de liderazgo y con una gran capacidad de aprendizaje.
+                    </p>
+                </div>
+                <h2 id="Fort">Fortalezas</h2>
+                <div class="fort-content">
+                    <p class="description-info">
+                        Adaptacion a los cambios, sed de conocimiento, Colaborador en trabajos en Equipo, Lider Innato y
+                        Empatico con las personas de mi alrededor
+                    </p>
+                </div>
+                <h2 id="Mot">Motivaciones</h2>
+                <div class="mot-content">
+                    <p class="description-info">
+                        Mi motivacion es poder ayudar a las personas a traves de la tecnologia, de la ciencia y la
+                        ingenieria.<br>
+                        Mi mayor motivacion siempre seran mis familiares, mascotas, mis amigos cercanos, las personas
+                        que
+                        siempre quise, pero ya no estan y mis ganas de conquistar mis suenos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionProfile" id="Portfolio">
+            <h1>Portafolio</h1>
+            <h2>Proyectos Universitarios</h2>
+            <div class="project-wrapper">
+                <p class="proyect-tittle">
+                    Proyecto de Simulador de conduccion de un Rover Marciano
+                    a traves de Comandos
+                </p>
+                <a href="https://Ghost-Division25@bitbucket.org/Diegoz99/exporacioncrateresmarte.git">
+                    <img class="project-image" src="images/image 8.png"></a>
+            </div>
+            <div class="project-wrapper">
+                <p class="proyect-tittle">
+                    Maquetacion de Plataforma de Compra y venta especial para Fundacion APADA
+                </p>
+                <img class="project-image" src="images/image 9.png"
+                    onclick="location.href='https://www.figma.com/file/zl9OLf2Nihj7gndYcDaU1n/Pantallas-de-proyecto?node-id=0%3A1'">
+            </div>
+            <div class="project-wrapper">
+                <p class="proyect-tittle">
+                    Maquetacion de Plataforma Estudiantil como parte de la materia Emprendimiento e innovacion
+                </p>
+                <a href=" https://www.figma.com/file/WKFwQpBAwxhO0C3VX8eepv/dae-team-library?node-id=0%3A1">
+                    <img class="project-image" src="images/image 10.png"></a>
+            </div>
+            <div class="project-wrapper">
+                <p class="proyect-tittle">
+                    Juego de Adivinanza usando arbol binario de decisiones
+                </p>
+                <a href=" https://github.com/adelovelace/JuegoAdivinanza.git">
+                    <img class="project-image" src="images/image 13.png"></a>
+            </div>
+            <h2>Proyectos Personales</h2>
+            <div class="project-wrapper">
+                <p class="proyect-tittle">
+                    Juego de Preguntas para atraer publico al stand del Programa Mentores y Novatos
+                    en la Induccion de Novatos 2022 I</p>
+                <img class="project-image" src="images/image 11.png">
+            </div>
 
+        </div>
+        <div class="sectionProfile" id="Badges">
+            <h1>Certificados</h1>
+
+            <div class="badges-wrapper">
+                <p class="Badge-Description">
+                    Informatica Forense y Peritaje Informatico
+                </p>
+                <img class="Badge-img" src="images/cert01.jpg">
+            </div>
+            <div class="badges-wrapper">
+                <p class="Badge-Description">
+                    Primeros Auxilios Psicologicos
+                </p>
+                <img class="Badge-img" src="images/cert02.jpg">
+            </div>
+            <div class="badges-wrapper">
+                <p class="Badge-Description">
+                    Chino-Mandarin HSK1
+                </p>
+                <img class="Badge-img" src="images/cert03.jpg">
+            </div>
+            <div class="badges-wrapper">
+                <p class="Badge-Description">
+                    Earth And You... (Curso de Sismologia y Vulcanologia)
+                </p>
+                <img class="Badge-img" src="images/cert04.jpg">
+            </div>
+            <div class="badges-wrapper">
+                <p class="Badge-Description">
+                    Ciberseguridad en Redes
+                </p>
+                <img class="Badge-img" src="images/cert05.jpg">
+            </div>
+        </div>
+        <div class="badges-wrapper">
+            <p class="Badge-Description">
+                Security Day 2022
+            </p>
+            <img class="Badge-img" src="images/cert06.jpg">
+        </div>
+        <div class="badges-wrapper">
+            <p class="Badge-Description">
+                Ethical Hacking Red Team
+            </p>
+            <img class="Badge-img" src="images/cert07.png">
+        </div>
+        <div class="badges-wrapper">
+            <p class="Badge-Description">
+                Participacion en el Programa Mentores y Novatos 2021 II (ESPOL)
+            </p>
+            <img class="Badge-img" src="images/cert08.jpg">
+        </div>
+        <div class="sectionProfile" id="Contact">
+            <H1>Contacto</H1>
+            <div class="contact-wrapper">
+                <div class="Contact-Item">
+                    <h2>Redes Sociales</h2>
+                    <table class="SN-Table">
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                    viewBox="0 0 48 48" style=" fill:#000000;">
+                                    <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
+                                    <path fill="#fff"
+                                        d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z">
+                                    </path>
+                                </svg>
+                            </td>
+                            <td>
+                                <a id="network-ref" href="https://www.facebook.com/luisalejandro.donosobravo.313"
+                                    target="_blank">Alejandro
+                                    Donoso
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img alt="svgImg"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjMDNBOUY0IiBkPSJNNDIsMTIuNDI5Yy0xLjMyMywwLjU4Ni0yLjc0NiwwLjk3Ny00LjI0NywxLjE2MmMxLjUyNi0wLjkwNiwyLjctMi4zNTEsMy4yNTEtNC4wNThjLTEuNDI4LDAuODM3LTMuMDEsMS40NTItNC42OTMsMS43NzZDMzQuOTY3LDkuODg0LDMzLjA1LDksMzAuOTI2LDljLTQuMDgsMC03LjM4NywzLjI3OC03LjM4Nyw3LjMyYzAsMC41NzIsMC4wNjcsMS4xMjksMC4xOTMsMS42N2MtNi4xMzgtMC4zMDgtMTEuNTgyLTMuMjI2LTE1LjIyNC03LjY1NGMtMC42NCwxLjA4Mi0xLDIuMzQ5LTEsMy42ODZjMCwyLjU0MSwxLjMwMSw0Ljc3OCwzLjI4NSw2LjA5NmMtMS4yMTEtMC4wMzctMi4zNTEtMC4zNzQtMy4zNDktMC45MTRjMCwwLjAyMiwwLDAuMDU1LDAsMC4wODZjMCwzLjU1MSwyLjU0Nyw2LjUwOCw1LjkyMyw3LjE4MWMtMC42MTcsMC4xNjktMS4yNjksMC4yNjMtMS45NDEsMC4yNjNjLTAuNDc3LDAtMC45NDItMC4wNTQtMS4zOTItMC4xMzVjMC45NCwyLjkwMiwzLjY2Nyw1LjAyMyw2Ljg5OCw1LjA4NmMtMi41MjgsMS45Ni01LjcxMiwzLjEzNC05LjE3NCwzLjEzNGMtMC41OTgsMC0xLjE4My0wLjAzNC0xLjc2MS0wLjEwNEM5LjI2OCwzNi43ODYsMTMuMTUyLDM4LDE3LjMyMSwzOGMxMy41ODUsMCwyMS4wMTctMTEuMTU2LDIxLjAxNy0yMC44MzRjMC0wLjMxNy0wLjAxLTAuNjMzLTAuMDI1LTAuOTQ1QzM5Ljc2MywxNS4xOTcsNDEuMDEzLDEzLjkwNSw0MiwxMi40MjkiPjwvcGF0aD48L3N2Zz4=" />
+                            </td>
+                            <td>
+                                <a id="network-ref" href="https://twitter.com/LuisDonoso2001"
+                                    target="_blank">@LuisDonoso2001
+                                </a>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img alt="svgImg"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC44NjgsNDMuMzAzbDIuNjk0LTkuODM1QzUuOSwzMC41OSw1LjAyNiwyNy4zMjQsNS4wMjcsMjMuOTc5QzUuMDMyLDEzLjUxNCwxMy41NDgsNSwyNC4wMTQsNWM1LjA3OSwwLjAwMiw5Ljg0NSwxLjk3OSwxMy40Myw1LjU2NmMzLjU4NCwzLjU4OCw1LjU1OCw4LjM1Niw1LjU1NiwxMy40MjhjLTAuMDA0LDEwLjQ2NS04LjUyMiwxOC45OC0xOC45ODYsMTguOThjLTAuMDAxLDAsMCwwLDAsMGgtMC4wMDhjLTMuMTc3LTAuMDAxLTYuMy0wLjc5OC05LjA3My0yLjMxMUw0Ljg2OCw0My4zMDN6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQuODY4LDQzLjgwM2MtMC4xMzIsMC0wLjI2LTAuMDUyLTAuMzU1LTAuMTQ4Yy0wLjEyNS0wLjEyNy0wLjE3NC0wLjMxMi0wLjEyNy0wLjQ4M2wyLjYzOS05LjYzNmMtMS42MzYtMi45MDYtMi40OTktNi4yMDYtMi40OTctOS41NTZDNC41MzIsMTMuMjM4LDEzLjI3Myw0LjUsMjQuMDE0LDQuNWM1LjIxLDAuMDAyLDEwLjEwNSwyLjAzMSwxMy43ODQsNS43MTNjMy42NzksMy42ODMsNS43MDQsOC41NzcsNS43MDIsMTMuNzgxYy0wLjAwNCwxMC43NDEtOC43NDYsMTkuNDgtMTkuNDg2LDE5LjQ4Yy0zLjE4OS0wLjAwMS02LjM0NC0wLjc4OC05LjE0NC0yLjI3N2wtOS44NzUsMi41ODlDNC45NTMsNDMuNzk4LDQuOTExLDQzLjgwMyw0Ljg2OCw0My44MDN6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2NmZDhkYyIgZD0iTTI0LjAxNCw1YzUuMDc5LDAuMDAyLDkuODQ1LDEuOTc5LDEzLjQzLDUuNTY2YzMuNTg0LDMuNTg4LDUuNTU4LDguMzU2LDUuNTU2LDEzLjQyOGMtMC4wMDQsMTAuNDY1LTguNTIyLDE4Ljk4LTE4Ljk4NiwxOC45OGgtMC4wMDhjLTMuMTc3LTAuMDAxLTYuMy0wLjc5OC05LjA3My0yLjMxMUw0Ljg2OCw0My4zMDNsMi42OTQtOS44MzVDNS45LDMwLjU5LDUuMDI2LDI3LjMyNCw1LjAyNywyMy45NzlDNS4wMzIsMTMuNTE0LDEzLjU0OCw1LDI0LjAxNCw1IE0yNC4wMTQsNDIuOTc0QzI0LjAxNCw0Mi45NzQsMjQuMDE0LDQyLjk3NCwyNC4wMTQsNDIuOTc0QzI0LjAxNCw0Mi45NzQsMjQuMDE0LDQyLjk3NCwyNC4wMTQsNDIuOTc0IE0yNC4wMTQsNDIuOTc0QzI0LjAxNCw0Mi45NzQsMjQuMDE0LDQyLjk3NCwyNC4wMTQsNDIuOTc0QzI0LjAxNCw0Mi45NzQsMjQuMDE0LDQyLjk3NCwyNC4wMTQsNDIuOTc0IE0yNC4wMTQsNEMyNC4wMTQsNCwyNC4wMTQsNCwyNC4wMTQsNEMxMi45OTgsNCw0LjAzMiwxMi45NjIsNC4wMjcsMjMuOTc5Yy0wLjAwMSwzLjM2NywwLjg0OSw2LjY4NSwyLjQ2MSw5LjYyMmwtMi41ODUsOS40MzljLTAuMDk0LDAuMzQ1LDAuMDAyLDAuNzEzLDAuMjU0LDAuOTY3YzAuMTksMC4xOTIsMC40NDcsMC4yOTcsMC43MTEsMC4yOTdjMC4wODUsMCwwLjE3LTAuMDExLDAuMjU0LTAuMDMzbDkuNjg3LTIuNTRjMi44MjgsMS40NjgsNS45OTgsMi4yNDMsOS4xOTcsMi4yNDRjMTEuMDI0LDAsMTkuOTktOC45NjMsMTkuOTk1LTE5Ljk4YzAuMDAyLTUuMzM5LTIuMDc1LTEwLjM1OS01Ljg0OC0xNC4xMzVDMzQuMzc4LDYuMDgzLDI5LjM1Nyw0LjAwMiwyNC4wMTQsNEwyNC4wMTQsNHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDBjMzUxIiBkPSJNMzUuMTc2LDEyLjgzMmMtMi45OC0yLjk4Mi02Ljk0MS00LjYyNS0xMS4xNTctNC42MjZjLTguNzA0LDAtMTUuNzgzLDcuMDc2LTE1Ljc4NywxNS43NzRjLTAuMDAxLDIuOTgxLDAuODMzLDUuODgzLDIuNDEzLDguMzk2bDAuMzc2LDAuNTk3bC0xLjU5NSw1LjgyMWw1Ljk3My0xLjU2NmwwLjU3NywwLjM0MmMyLjQyMiwxLjQzOCw1LjIsMi4xOTgsOC4wMzIsMi4xOTloMC4wMDZjOC42OTgsMCwxNS43NzctNy4wNzcsMTUuNzgtMTUuNzc2QzM5Ljc5NSwxOS43NzgsMzguMTU2LDE1LjgxNCwzNS4xNzYsMTIuODMyeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTE5LjI2OCwxNi4wNDVjLTAuMzU1LTAuNzktMC43MjktMC44MDYtMS4wNjgtMC44MmMtMC4yNzctMC4wMTItMC41OTMtMC4wMTEtMC45MDktMC4wMTFjLTAuMzE2LDAtMC44MywwLjExOS0xLjI2NSwwLjU5NGMtMC40MzUsMC40NzUtMS42NjEsMS42MjItMS42NjEsMy45NTZjMCwyLjMzNCwxLjcsNC41OSwxLjkzNyw0LjkwNmMwLjIzNywwLjMxNiwzLjI4Miw1LjI1OSw4LjEwNCw3LjE2MWM0LjAwNywxLjU4LDQuODIzLDEuMjY2LDUuNjkzLDEuMTg3YzAuODctMC4wNzksMi44MDctMS4xNDcsMy4yMDItMi4yNTVjMC4zOTUtMS4xMDgsMC4zOTUtMi4wNTcsMC4yNzctMi4yNTVjLTAuMTE5LTAuMTk4LTAuNDM1LTAuMzE2LTAuOTA5LTAuNTU0cy0yLjgwNy0xLjM4NS0zLjI0Mi0xLjU0M2MtMC40MzUtMC4xNTgtMC43NTEtMC4yMzctMS4wNjgsMC4yMzhjLTAuMzE2LDAuNDc0LTEuMjI1LDEuNTQzLTEuNTAyLDEuODU5Yy0wLjI3NywwLjMxNy0wLjU1NCwwLjM1Ny0xLjAyOCwwLjExOWMtMC40NzQtMC4yMzgtMi4wMDItMC43MzgtMy44MTUtMi4zNTRjLTEuNDEtMS4yNTctMi4zNjItMi44MS0yLjYzOS0zLjI4NWMtMC4yNzctMC40NzQtMC4wMy0wLjczMSwwLjIwOC0wLjk2OGMwLjIxMy0wLjIxMywwLjQ3NC0wLjU1NCwwLjcxMi0wLjgzMWMwLjIzNy0wLjI3NywwLjMxNi0wLjQ3NSwwLjQ3NC0wLjc5MWMwLjE1OC0wLjMxNywwLjA3OS0wLjU5NC0wLjA0LTAuODMxQzIwLjYxMiwxOS4zMjksMTkuNjksMTYuOTgzLDE5LjI2OCwxNi4wNDV6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48L3N2Zz4=" />
+                            </td>
+                            <td>
+                                <a id="network-ref" href="https://wa.me/593986339002" target="_blank">+ 593 986 339
+                                    002</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img alt="svgImg"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDEsMjRjMCw5LjQtNy42LDE3LTE3LDE3UzcsMzMuNCw3LDI0UzE0LjYsNywyNCw3UzQxLDE0LjYsNDEsMjR6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzQ1NWE2NCIgZD0iTTIxIDQxdi01LjVjMC0uMy4yLS41LjUtLjVzLjUuMi41LjVWNDFoMnYtNi41YzAtLjMuMi0uNS41LS41cy41LjIuNS41VjQxaDJ2LTUuNWMwLS4zLjItLjUuNS0uNXMuNS4yLjUuNVY0MWgxLjhjLjItLjMuMi0uNi4yLTEuMVYzNmMwLTIuMi0xLjktNS4yLTQuMy01LjJoLTIuNWMtMi4zIDAtNC4zIDMuMS00LjMgNS4ydjMuOWMwIC40LjEuOC4yIDEuMUwyMSA0MSAyMSA0MXpNNDAuMSAyNi40QzQwLjEgMjYuNCA0MC4xIDI2LjQgNDAuMSAyNi40YzAgMC0xLjMtLjQtMi40LS40IDAgMC0uMSAwLS4xIDAtMS4xIDAtMi45LjMtMi45LjMtLjEgMC0uMSAwLS4xLS4xIDAtLjEgMC0uMS4xLS4xLjEgMCAyLS4zIDMuMS0uMyAxLjEgMCAyLjQuNCAyLjUuNC4xIDAgLjEuMS4xLjJDNDAuMiAyNi4zIDQwLjIgMjYuNCA0MC4xIDI2LjR6TTM5LjggMjcuMkMzOS44IDI3LjIgMzkuOCAyNy4yIDM5LjggMjcuMmMwIDAtMS40LS40LTIuNi0uNC0uOSAwLTMgLjItMy4xLjItLjEgMC0uMSAwLS4xLS4xIDAtLjEgMC0uMS4xLS4xLjEgMCAyLjItLjIgMy4xLS4yIDEuMyAwIDIuNi40IDIuNi40LjEgMCAuMS4xLjEuMkMzOS45IDI3LjEgMzkuOSAyNy4yIDM5LjggMjcuMnpNNy44IDI2LjRjLS4xIDAtLjEgMC0uMS0uMSAwLS4xIDAtLjEuMS0uMi44LS4yIDIuNC0uNSAzLjMtLjUuOCAwIDMuNS4yIDMuNi4yLjEgMCAuMS4xLjEuMSAwIC4xLS4xLjEtLjEuMSAwIDAtMi43LS4yLTMuNS0uMkMxMC4xIDI2IDguNiAyNi4yIDcuOCAyNi40IDcuOCAyNi40IDcuOCAyNi40IDcuOCAyNi40ek04LjIgMjcuOWMwIDAtLjEgMC0uMS0uMSAwLS4xIDAtLjEgMC0uMi4xIDAgMS40LS44IDIuOS0xIDEuMy0uMiA0IC4xIDQuMi4xLjEgMCAuMS4xLjEuMSAwIC4xLS4xLjEtLjEuMSAwIDAgMCAwIDAgMCAwIDAtMi44LS4zLTQuMS0uMUM5LjYgMjcuMSA4LjIgMjcuOSA4LjIgMjcuOSA4LjIgMjcuOSA4LjIgMjcuOSA4LjIgMjcuOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDU1YTY0IiBkPSJNMTQuMiwyMy41YzAtNC40LDQuNi04LjUsMTAuMy04LjVjNS43LDAsMTAuMyw0LDEwLjMsOC41UzMxLjUsMzEsMjQuNSwzMVMxNC4yLDI3LjksMTQuMiwyMy41eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiM0NTVhNjQiIGQ9Ik0yOC42IDE2LjNjMCAwIDEuNy0yLjMgNC44LTIuMyAxLjIgMS4yLjQgNC44IDAgNS44TDI4LjYgMTYuM3pNMjAuNCAxNi4zYzAgMC0xLjctMi4zLTQuOC0yLjMtMS4yIDEuMi0uNCA0LjggMCA1LjhMMjAuNCAxNi4zek0yMC4xIDM1LjljMCAwLTIuMyAwLTIuOCAwLTEuMiAwLTIuMy0uNS0yLjgtMS41LS42LTEuMS0xLjEtMi4zLTIuNi0zLjMtLjMtLjItLjEtLjQuNC0uNC41LjEgMS40LjIgMi4xIDEuMS43LjkgMS41IDIgMi44IDIgMS4zIDAgMi43IDAgMy41LS45TDIwLjEgMzUuOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMDBiY2Q0IiBkPSJNMjQsNEMxMyw0LDQsMTMsNCwyNHM5LDIwLDIwLDIwczIwLTksMjAtMjBTMzUsNCwyNCw0eiBNMjQsNDBjLTguOCwwLTE2LTcuMi0xNi0xNlMxNS4yLDgsMjQsOCBzMTYsNy4yLDE2LDE2UzMyLjgsNDAsMjQsNDB6Ij48L3BhdGg+PC9zdmc+" />
+                            </td>
+                            <td>
+                                <a id="network-ref" href="https://github.com/GhostWarrior25"
+                                    target="_blank">GhostWarrior25</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img alt="svgImg"
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjMDI4OGQxIiBkPSJNMjQgNEEyMCAyMCAwIDEgMCAyNCA0NEEyMCAyMCAwIDEgMCAyNCA0WiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNCAxOUgxOFYzNEgxNHpNMTUuOTg4IDE3aC0uMDIyQzE0Ljc3MiAxNyAxNCAxNi4xMSAxNCAxNC45OTkgMTQgMTMuODY0IDE0Ljc5NiAxMyAxNi4wMTEgMTNjMS4yMTcgMCAxLjk2Ni44NjQgMS45ODkgMS45OTlDMTggMTYuMTEgMTcuMjI4IDE3IDE1Ljk4OCAxN3pNMzUgMjQuNWMwLTMuMDM4LTIuNDYyLTUuNS01LjUtNS41LTEuODYyIDAtMy41MDUuOTI4LTQuNSAyLjM0NFYxOWgtNHYxNWg0di04YzAtMS42NTcgMS4zNDMtMyAzLTNzMyAxLjM0MyAzIDN2OGg0QzM1IDM0IDM1IDI0LjkyMSAzNSAyNC41eiI+PC9wYXRoPjwvc3ZnPg==" />
+                            </td>
+                            <td>
+                                <a id="network-ref" href="https://www.linkedin.com/in/luidbrav/" target="_blank">Luis
+                                    Alejandro Donoso Bravo</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="Contact-Item">
+                    <h2>Contactame</h2>
+                    <form action="https://formspree.io/f/xvodqzqk" method="POST">
+                        <p>Nombres Completos</p>
+                        <input type="text" name="name" placeholder="Nombres Completos" required>
+                        <p>Correo Electronico</p>
+                        <input type="email" name="_replyto" placeholder="Email" required>
+                        <p>Mensaje</p>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <p></p>
+                        <input type="submit" class="secButton" value="Enviar">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
 
 </body>
 
